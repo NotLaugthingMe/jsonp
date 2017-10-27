@@ -50,11 +50,13 @@ function formatData(data) {
     }
     return data
 }
-const getJsonpData =function(url,data){
+const getJsonpData =function(url,data,timeout,callbackName){
     return new Promise((resolve,reject)=>{
         jsonp({
             url,
             data,
+            timeout:timeout||"",
+            callback:callbackName ||"",
             success:function (response) {
                 resolve(response)
             },

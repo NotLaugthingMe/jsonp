@@ -12,3 +12,11 @@ getJsonpData(url,data).then(response=>{
     console.log(response);
 })
 ```
+### params
+|  name        | description   |   |
+| :--------:   | :-----:  | :----:  |
+| url     | (String) url to fetch |      |
+| data        |   name of the query string parameter to   |      |
+| timeout         |     (Number) how long after a timeout error is emitted. 0 to disable (defaults to 10000)    |    |
+| callbackName        |    (String) name of the global callback functions that handle jsonp responses     |     |
+
